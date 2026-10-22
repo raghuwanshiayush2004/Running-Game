@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Andolan Runner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="ctl" hidden>
+  <button type="button" data-a="L" aria-label="Left">◀</button>
+  <button type="button" data-a="J" aria-label="Jump">▲<small>KOODO</small></button>
+  <button type="button" id="bx" data-a="X" aria-label="Special"><span id="bxi">⚡</span><small id="bxt">READY</small></button>
+  <button type="button" data-a="S" aria-label="Slide">▼<small>SLIDE</small></button>
+  <button type="button" data-a="R" aria-label="Right">▶</button>
+</div>
+<button type="button" id="mute" aria-label="Sound">🔊</button>
+
+<section id="menu" class="scr">
+  <h1>ANDOLAN<br>RUNNER</h1>
+  <p class="sub">Police se bachke daudo, awaaz ke coins uthao. Bus mein baithna nahi hai!</p>
+  <div id="cards"></div>
+  <button type="button" id="go" class="big">DAUDO ▶</button>
+  <p class="how">Laptop: ← → lane, ↑ ya SPACE koodo, ↓ slide, E ya SHIFT special power<br>Phone: swipe karo ya neeche ke buttons dabao (beech ka ⚡ = special)<br>Police ki goli ke liye lane badlo ya koodo, lathi wale police se lane badlo!</p>
+</section>
+
+<section id="over" class="scr" hidden>
+  <h1>BUS MEIN<br>BAITH GAYE 🚌</h1>
+  <p class="sub" id="os"></p>
+  <button type="button" id="again" class="big">PHIR SE DAUDO ▶</button>
+  <button type="button" id="home" class="big alt">Character badlo</button>
+</section>
+
+<script src="audio.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
